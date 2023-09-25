@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="1000dp"
+        android:background="@drawable/green_gradient_background"
+        android:layout_alignParentTop="true"
+        android:gravity="bottom"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+        <ImageView
+            android:layout_marginLeft="55dp"
+            android:id="@+id/logo"
+            android:layout_width="42dp"
+            android:layout_height="60dp"
+            android:src="@drawable/logo"
+            android:scaleType="fitCenter"
+            android:layout_toEndOf="@id/backButton"/>
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pomodoro"
+            android:textSize="40sp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@android:color/white"
+            android:layout_toEndOf="@id/logo"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextureView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/textureView"/>
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/capture"
+        android:text=""
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="75dp"
+        android:background="@drawable/capture_button_background"
+        android:src="@drawable/search"
+        android:scaleType="fitCenter"
+        android:padding="20dp"/>
+
+</RelativeLayout>

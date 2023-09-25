@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Hintergrund mit abgerundeten Ecken -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#8FD388"
+                android:endColor="#30C67C"
+                android:angle="0"/>
+            <corners android:radius="1000dp" />
+        </shape>
+
+    </item>
+</layer-list>
